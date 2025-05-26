@@ -4,14 +4,11 @@ const Controller = require('./Controller/promptController');
 const cors = require('cors');
 const bodyParser = require('body-parser');
 
+
 const app = express();
 
 // Use CORS middleware for all routes
-app.use(cors({
-  origin: "*", // Replace with your frontend origin for better security
-  methods: ["GET", "POST", "PUT", "DELETE"], // Allowed methods
-  allowedHeaders: ["Content-Type", "Authorization"], // Allowed headers
-}));
+app.use(cors());
 
 // Use built-in express.json() and express.urlencoded() to handle body parsing
 app.use(express.json({ limit: '10mb' }));
@@ -22,6 +19,7 @@ app.set('view engine', 'ejs');
 
 // Mount the chatbot routes
 app.use('/chatbot/v1', route);
+
 
 // Error handling middleware (optional, but good for catching errors globally)
 app.use((err, req, res, next) => {
