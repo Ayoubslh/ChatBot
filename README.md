@@ -34,7 +34,8 @@ This project is a server-side application designed to interface with Large Langu
 ##📄License:
  This project is licensed under the MIT License.
  
- ##🤝 Contributing
+##🤝 Contributing:
+ 
 Contributions are welcome! Please open an issue or submit a pull request for any improvements or suggestions.
  
 
