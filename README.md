@@ -23,18 +23,24 @@ This project is a server-side application designed to interface with Large Langu
    cd ChatBot
 2.**Install dependencies**: 
     npm install
+    
 3.**set up enviremont variables**:
+
  Create a .env file in the root directory and add your configuration:
   PORT=3000
   DEEPSEEK_API_KEY=your_deepseek_api_key
   GEMINI_API_KEY=your_gemini_api_key
+  
 4.**Start the server**:
+
  npm start
    it will run on [https](http://localhost:3000) by default if the port is 3000
-##📄License:
+   
+## 📄License:
+
  This project is licensed under the MIT License.
  
-##🤝 Contributing:
+## 🤝 Contributing:
  
 Contributions are welcome! Please open an issue or submit a pull request for any improvements or suggestions.
  
